@@ -1,0 +1,123 @@
+ p {
+            margin: 0;
+        } <!-- 移除段落的默认外边距 -->
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        } <!-- 设置所有元素及其伪元素的盒模型为border-box -->
+
+        .overlay,
+        .scare {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+        } <!-- 将.overlay和.scare设置为固定定位，覆盖整个视窗 -->
+
+        p.overlay-title {
+            font-size: 24px;
+            font-weight: 900;
+            color: black;
+            line-height: 1;
+            margin-bottom: 16px;
+        } <!-- 设置.overlay-title段落的样式 -->
+
+        .overlay-button {
+            display: inline-flex;
+            align-items: center;
+            height: 40px;
+            padding-right: 24px;
+            padding-left: 24px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1;
+            border-radius: 4px;
+            margin: 4px;
+            cursor: pointer;
+        } <!-- 设置.overlay-button按钮的样式 -->
+
+        .overlay-buttons-wrapper {
+            margin: 24px -8px -8px;
+        } <!-- 设置.overlay-buttons-wrapper的外边距 -->
+
+        #accept-button {
+            background-color: rgb(255, 0, 0);
+            color: white;
+        } <!-- 设置#accept-button按钮的背景色和文字颜色 -->
+
+        #decline-button {
+            color: rgb(0, 0, 0);
+            border: 2px solid rgb(0, 0, 0);
+        } <!-- 设置#decline-button按钮的边框和文字颜色 -->
+
+        p.overlay-description {
+            font-size: 16px;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.5);
+            line-height: 1.25;
+            margin-bottom: 16px;
+        } <!-- 设置.overlay-description段落的样式 -->
+
+        a.overlay-link {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            color: rgb(255, 0, 0);
+            line-height: 1;
+            position: relative;
+            margin-top: 16px;
+        } <!-- 设置.overlay-link链接的样式 -->
+
+        a.overlay-link::before {
+            position: absolute;
+            content: "";
+            height: calc(50% + 4px);
+            width: calc(100% + 8px);
+            bottom: -4px;
+            left: -4px;
+            background-color: rgba(132, 94, 194, 0.1);
+        } <!-- 设置.overlay-link链接的伪元素样式 -->
+
+        .overlay-body {
+            max-width: 512px;
+            text-align: center;
+            font-family: "Inter", sans-serif;
+        } <!-- 设置.overlay-body的最大宽度，居中对齐，并使用"Inter"字体 -->
+
+        .overlay[hidden] {
+            display: none;
+        } <!-- 隐藏.hidden类的.overlay元素 -->
+
+        .overlay {
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(https://www.loliapi.com/acg/);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center 0;
+        } <!-- 设置.overlay的样式，包括背景图片和位置 -->
+
+        .text-bg {
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 24px;
+        } <!-- 设置.text-bg的背景色和内边距 -->
+
+        .scare {
+            z-index: 1;
+        } <!-- 设置.scare的z-index值 -->
+
+        video#video {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        } <!-- 设置#video视频的大小和适应方式 -->
+
+        video#video::-webkit-media-controls-enclosure {
+            display: none !important;
+        } <!-- 隐藏#video视频的控件 -->
