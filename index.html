@@ -1,27 +1,28 @@
+```html
 <!DOCTYPE html>
 <html lang="zh">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>❤️RinlitHub❤️</title>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-190316399-3"></script>
+    <meta charset="utf-8"> <!-- 设置文档的字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> <!-- 设置视口，使页面在移动设备上更好地显示 -->
+    <title>❤️RinlitHub❤️</title> <!-- 设置网页标题 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-190316399-3"></script> <!-- 异步加载Google Analytics脚本 -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'UA-190316399-3');
-    </script>
+    </script> <!-- 配置和初始化Google Analytics -->
     <style type="text/css">
         p {
             margin: 0;
-        }
+        } <!-- 移除段落的默认外边距 -->
 
         *,
         *::before,
         *::after {
             box-sizing: border-box;
-        }
+        } <!-- 设置所有元素及其伪元素的盒模型为border-box -->
 
         .overlay,
         .scare {
@@ -30,7 +31,7 @@
             left: 0;
             height: 100vh;
             width: 100vw;
-        }
+        } <!-- 将.overlay和.scare设置为固定定位，覆盖整个视窗 -->
 
         p.overlay-title {
             font-size: 24px;
@@ -38,7 +39,7 @@
             color: black;
             line-height: 1;
             margin-bottom: 16px;
-        }
+        } <!-- 设置.overlay-title段落的样式 -->
 
         .overlay-button {
             display: inline-flex;
@@ -52,21 +53,21 @@
             border-radius: 4px;
             margin: 4px;
             cursor: pointer;
-        }
+        } <!-- 设置.overlay-button按钮的样式 -->
 
         .overlay-buttons-wrapper {
             margin: 24px -8px -8px;
-        }
+        } <!-- 设置.overlay-buttons-wrapper的外边距 -->
 
         #accept-button {
             background-color: rgb(255, 0, 0);
             color: white;
-        }
+        } <!-- 设置#accept-button按钮的背景色和文字颜色 -->
 
         #decline-button {
             color: rgb(0, 0, 0);
             border: 2px solid rgb(0, 0, 0);
-        }
+        } <!-- 设置#decline-button按钮的边框和文字颜色 -->
 
         p.overlay-description {
             font-size: 16px;
@@ -74,7 +75,7 @@
             color: rgba(0, 0, 0, 0.5);
             line-height: 1.25;
             margin-bottom: 16px;
-        }
+        } <!-- 设置.overlay-description段落的样式 -->
 
         a.overlay-link {
             display: inline-block;
@@ -85,7 +86,7 @@
             line-height: 1;
             position: relative;
             margin-top: 16px;
-        }
+        } <!-- 设置.overlay-link链接的样式 -->
 
         a.overlay-link::before {
             position: absolute;
@@ -95,17 +96,17 @@
             bottom: -4px;
             left: -4px;
             background-color: rgba(132, 94, 194, 0.1);
-        }
+        } <!-- 设置.overlay-link链接的伪元素样式 -->
 
         .overlay-body {
             max-width: 512px;
             text-align: center;
             font-family: "Inter", sans-serif;
-        }
+        } <!-- 设置.overlay-body的最大宽度，居中对齐，并使用"Inter"字体 -->
 
         .overlay[hidden] {
             display: none;
-        }
+        } <!-- 隐藏.hidden类的.overlay元素 -->
 
         .overlay {
             z-index: 2;
@@ -116,26 +117,26 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center 0;
-        }
+        } <!-- 设置.overlay的样式，包括背景图片和位置 -->
 
         .text-bg {
             background-color: rgba(255, 255, 255, 0.6);
             padding: 24px;
-        }
+        } <!-- 设置.text-bg的背景色和内边距 -->
 
         .scare {
             z-index: 1;
-        }
+        } <!-- 设置.scare的z-index值 -->
 
         video#video {
             height: 100%;
             width: 100%;
             object-fit: cover;
-        }
+        } <!-- 设置#video视频的大小和适应方式 -->
 
         video#video::-webkit-media-controls-enclosure {
             display: none !important;
-        }
+        } <!-- 隐藏#video视频的控件 -->
     </style>
 </head>
 
@@ -143,21 +144,21 @@
     <div id="overlay" class="overlay">
         <div class="text-bg">
             <div class="overlay-body">
-                <p class="overlay-title">您是否已满18岁</p>
-                <p class="overlay-description">以下内容可能不适合<b>未满18岁</b>的人群观看，我们需要确认您的年龄。</p>
+                <p class="overlay-title">您是否已满18岁</p> <!-- 显示确认年龄的标题 -->
+                <p class="overlay-description">以下内容可能不适合<b>未满18岁</b>的人群观看，我们需要确认您的年龄。</p> <!-- 显示中文的确认年龄描述 -->
                 <p class="overlay-description">The following may not be suitable for people <b>under the age of
-                        18</b> and we need to confirm your age.</p>
+                        18</b> and we need to confirm your age.</p> <!-- 显示英文的确认年龄描述 -->
                 <div class="overlay-buttons-wrapper">
-                    <div id="accept-button" class="overlay-button">已满18岁</div>
-                    <div id="decline-button" class="overlay-button">未满18岁</div>
+                    <div id="accept-button" class="overlay-button">已满18岁</div> <!-- 已满18岁按钮 -->
+                    <div id="decline-button" class="overlay-button">未满18岁</div> <!-- 未满18岁按钮 -->
                 </div>
             </div>
         </div>
     </div>
     <div class="scare">
         <video id="video" class="video" src="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4"
-            loop="loop"></video>
-        <img src="https://count.getloli.com/get/@rickroll" style="display: none;">
+            loop="loop"></video> <!-- 自动循环播放的视频 -->
+        <img src="https://count.getloli.com/get/@rickroll" style="display: none;"> <!-- 隐藏的图片 -->
     </div>
     <script type="text/javascript">
         const video = document.getElementById("video");
@@ -167,17 +168,17 @@
         let hasClicked;
         window.onbeforeunload = function () {
             if (hasClicked) return true;
-        };
+        }; <!-- 在页面卸载之前触发，如果用户点击过按钮则显示确认框 -->
         function buttonClick1(event) {
             event.preventDefault();
             if (!hasClicked) hasClicked = true;
             overlay.hidden = true;
             video.play();
             videoClick();
-        }
+        } <!-- 点击已满18岁按钮后隐藏overlay，播放视频并进入全屏模式 -->
         function buttonClick2(event) {
             window.location.href = 'https://space.bilibili.com/569522843'
-        }
+        } <!-- 点击未满18岁按钮后跳转到指定链接 -->
         function videoClick(event) {
             if (event) event.preventDefault();
             // if not fullscreen
@@ -186,9 +187,12 @@
             else if (documentElement.mozRequestFullScreen) documentElement.mozRequestFullScreen();
             else if (documentElement.webkitRequestFullscreen) documentElement.webkitRequestFullscreen();
             else if (documentElement.msRequestFullscreen) documentElement.msRequestFullscreen();
-        }
-        acceptButton.addEventListener("click", buttonClick1);
-        declineButton.addEventListener("click", buttonClick2);
-        video.addEventListener("click", videoClick);
+        } <!-- 视频被点击后进入全屏模式 -->
+        acceptButton.addEventListener("click", buttonClick1); <!-- 为已满18岁按钮添加点击事件监听器 -->
+        declineButton.addEventListener("click", buttonClick2); <!-- 为未满18岁按钮添加点击事件监听器 -->
+        video.addEventListener("click", videoClick); <!-- 为视频添加点击事件监听器 -->
     </script>
 </body>
+
+</html>
+```
