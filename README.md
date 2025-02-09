@@ -5,7 +5,8 @@
 >因此,*classwidgets*制作组耗时*两分钟半*打造了这款闻名于世界之巅的*RinlitHub*.
 
 ---
-## [中文](请替换本网址.com "中文版本") 
+### [中文](https://github.com/FireworkRocket/RinlitHub/blob/main/README.md "中文版本")  
+## [English](https://github.com/FireworkRocket/RinlitHub/blob/main/readme_en.md "English Version")
 ![一定是rinlit干的](https://github.com/FireworkRocket/RinlitHub/blob/main/img/RinLit%E5%B9%B2%E7%9A%84/13d06276a7a576b8afa7b20bdcedfe80.jpg?raw=true)
 >**我们不承担任何对于精神状态产生损伤的赔偿.**
 ---
