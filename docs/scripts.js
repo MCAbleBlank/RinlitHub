@@ -1,34 +1,20 @@
-const video = document.getElementById("video");
 const overlay = document.getElementById("overlay");
 const declineButton = document.getElementById("decline-button");
 const acceptButton = document.getElementById("accept-button");
-let hasClicked = false;
 
-window.onbeforeunload = function () {
-    if (hasClicked) return true;
-};
-
-function buttonClick1(event) {
+function handleAccept(event) {
     event.preventDefault();
-    if (!hasClicked) hasClicked = true;
-    overlay.hidden = true;
-    video.play();
-    videoClick();
+    // 跳转到画廊页面
+    window.location.href = '/gallery/';
 }
 
-function buttonClick2(event) {
-    window.location.href = 'https://space.bilibili.com/569522843';
+function handleDecline(event) {
+    event.preventDefault();
+    window.location.href = 'https://classwidgets.rinlit.cn';
 }
 
-function videoClick(event) {
-    if (event) event.preventDefault();
-    const { documentElement } = document;
-    if (documentElement.requestFullscreen) documentElement.requestFullscreen();
-    else if (documentElement.mozRequestFullScreen) documentElement.mozRequestFullScreen();
-    else if (documentElement.webkitRequestFullscreen) documentElement.webkitRequestFullscreen();
-    else if (documentElement.msRequestFullscreen) documentElement.msRequestFullscreen();
-}
+acceptButton.addEventListener("click", handleAccept);
+declineButton.addEventListener("click", handleDecline);
 
-acceptButton.addEventListener("click", buttonClick1);
-declineButton.addEventListener("click", buttonClick2);
-video.addEventListener("click", videoClick);
+// 初始化时禁止滚动
+document.body.style.overflow = 'hidden';

@@ -1,0 +1,18 @@
+@media (max-width: 480px) {
+    .text-bg {
+        padding: 32px 24px;
+    }
+    
+    p.overlay-title {
+        font-size: 28px;
+    }
+    
+    .overlay-buttons-wrapper {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .overlay-button {
+        max-width: 100%;
+    }
+} 

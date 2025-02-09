@@ -1,0 +1,87 @@
+.overlay, .scare {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('https://t.mwm.moe/pc') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    z-index: 2;
+}
+
+.overlay[hidden] {
+    display: none;
+}
+
+.overlay-body {
+    max-width: 512px;
+    text-align: center;
+}
+
+.overlay-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: center;
+    margin: 0 0 24px;
+    line-height: 1.4;
+}
+
+.overlay-description {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--description-color);
+    text-align: center;
+    line-height: 1.8;
+    margin: 0 0 32px;
+}
+
+.text-bg {
+    background-color: var(--bg-color);
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 480px;
+    width: 100%;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.text-bg:hover {
+    box-shadow: 0 0 20px rgba(37, 217, 230, 0.2);
+    border-color: rgba(37, 217, 230, 0.3);
+}
+
+.scare {
+    z-index: 1;
+}
+
+video#video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 480px) {
+    .text-bg {
+        padding: 32px 24px;
+    }
+    
+    .overlay-title {
+        font-size: 28px;
+    }
+} 

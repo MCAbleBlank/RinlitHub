@@ -1,0 +1,46 @@
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: var(--bg-color);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body.can-scroll {
+    overflow: auto;
+}
+
+/* 添加第一屏占位区块样式 */
+.first-screen-placeholder {
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-color);
+}
+
+/* 确保main内容在占位符之后 */
+.gallery-container {
+    position: relative;
+    z-index: 1;
+}
+
+.site-title {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(45deg, #25D9E6, #845EC2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin: 0 0 24px;
+    text-shadow: 0 0 20px rgba(37, 217, 230, 0.3);
+}
+
+@media (max-width: 480px) {
+    .site-title {
+        font-size: 36px;
+    }
+} 

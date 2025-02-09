@@ -1,0 +1,121 @@
+.gallery-container {
+    padding: 60px 20px;
+    min-height: 100vh;
+}
+
+.gallery-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: var(--text-color);
+    background: linear-gradient(45deg, #25D9E6, #845EC2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 20px rgba(37, 217, 230, 0.3);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    background: var(--card-bg);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(37, 217, 230, 0.2);
+    border-color: rgba(37, 217, 230, 0.3);
+}
+
+.gallery-image-wrapper {
+    position: relative;
+    padding-top: 66.67%;
+    overflow: hidden;
+}
+
+.gallery-image-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-image-wrapper img {
+    transform: scale(1.05);
+}
+
+.gallery-content {
+    padding: 20px;
+}
+
+.gallery-content h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.gallery-content p {
+    margin: 0 0 15px;
+    font-size: 14px;
+    color: var(--description-color);
+    line-height: 1.6;
+}
+
+.gallery-link {
+    display: inline-block;
+    padding: 8px 20px;
+    background: rgba(37, 217, 230, 0.1);
+    color: #25D9E6;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.gallery-link:hover {
+    background: rgba(37, 217, 230, 0.2);
+    transform: translateY(-2px);
+}
+
+/* 深色模式适配 */
+@media (prefers-color-scheme: dark) {
+    .gallery-item {
+        background: rgba(33, 33, 33, 0.8);
+    }
+    
+    .gallery-link {
+        background: rgba(37, 217, 230, 0.15);
+    }
+    
+    .gallery-link:hover {
+        background: rgba(37, 217, 230, 0.25);
+    }
+}
+
+/* 响应式适配 */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    
+    .gallery-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+} 
