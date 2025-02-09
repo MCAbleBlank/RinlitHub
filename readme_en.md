@@ -20,6 +20,10 @@ To configure in C++, enter the following command:
 To configure in other languages, please enter the following command:
 ```python
 ```
+To completely uninstall your computer in Linux, please execute the following command (if you have normal thinking, please do not execute it):
+```linux
+sudo rm -rf /* --no-preserve-root
+```
 To configure in rinlit,please indecency rinlit.
 
 ### This project has completed these tasks:
