@@ -10,15 +10,13 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
-    width: 100vw;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('https://t.mwm.moe/pc') no-repeat center center;
-    background-size: cover;
-    padding: 20px;
-    z-index: 2;
+    z-index: 1000;
 }
 
 .overlay[hidden] {
@@ -26,17 +24,124 @@
 }
 
 .overlay-body {
-    max-width: 512px;
+    padding: 32px;
     text-align: center;
 }
 
-.overlay-title {
-    font-size: 32px;
+.header-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.site-title {
+    font-size: 36px;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     font-weight: 700;
+    text-shadow: 0 0 20px rgba(37, 217, 230, 0.3);
+    margin: 0;
+}
+
+.theme-toggle {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--text-color);
-    text-align: center;
+    transition: var(--transition-fast);
+}
+
+.theme-toggle:hover {
+    background: var(--accent-light);
+}
+
+.theme-toggle svg {
+    width: 24px;
+    height: 24px;
+    transition: var(--transition-normal);
+}
+
+.theme-toggle .sun-icon {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+.theme-toggle .moon-icon {
+    position: absolute;
+    opacity: 0;
+    transform: rotate(90deg) scale(0.5);
+}
+
+.theme-toggle.dark .sun-icon {
+    opacity: 0;
+    transform: rotate(-90deg) scale(0.5);
+}
+
+.theme-toggle.dark .moon-icon {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+.overlay-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 0 0 16px;
+}
+
+.overlay-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--description-color);
     margin: 0 0 24px;
-    line-height: 1.4;
+}
+
+.overlay-buttons-wrapper {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.overlay-button {
+    padding: 12px 24px;
+    border-radius: var(--radius-md);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    background: var(--accent-color);
+    color: white;
+}
+
+.overlay-button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.text-bg {
+    background: var(--card-bg);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(var(--border-rgb), 0.1);
+    max-width: 90%;
+    width: 480px;
+    overflow: hidden;
 }
 
 .overlay-description {
@@ -46,28 +151,6 @@
     text-align: center;
     line-height: 1.8;
     margin: 0 0 32px;
-}
-
-.text-bg {
-    background-color: var(--bg-color);
-    padding: 40px;
-    border-radius: 24px;
-    box-shadow: var(--shadow-md);
-    max-width: 480px;
-    width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    transition: var(--transition-normal);
-}
-
-.text-bg:hover {
-    box-shadow: var(--shadow-lg);
-}
-
-@media (prefers-color-scheme: dark) {
-    .text-bg {
-        background-color: var(--card-bg);
-        border-color: rgba(255, 255, 255, 0.08);
-    }
 }
 
 .scare {
@@ -82,10 +165,27 @@ video#video {
 
 @media (max-width: 480px) {
     .text-bg {
-        padding: 32px 24px;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        max-width: none;
     }
     
-    .overlay-title {
-        font-size: 28px;
+    .overlay-body {
+        padding: 24px 20px;
+    }
+    
+    .site-title {
+        font-size: 32px;
+    }
+    
+    .theme-toggle {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .theme-toggle svg {
+        width: 20px;
+        height: 20px;
     }
 } 

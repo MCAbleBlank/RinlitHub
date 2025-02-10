@@ -243,4 +243,77 @@
     .tag-count {
         background: rgba(255, 255, 255, 0.1);
     }
+}
+
+.header-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.theme-toggle {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    transition: var(--transition-fast);
+}
+
+.theme-toggle:hover {
+    background: var(--accent-light);
+}
+
+.theme-toggle svg {
+    width: 24px;
+    height: 24px;
+    transition: var(--transition-normal);
+}
+
+.theme-toggle .sun-icon {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+.theme-toggle .moon-icon {
+    position: absolute;
+    opacity: 0;
+    transform: rotate(90deg) scale(0.5);
+}
+
+.theme-toggle.dark .sun-icon {
+    opacity: 0;
+    transform: rotate(-90deg) scale(0.5);
+}
+
+.theme-toggle.dark .moon-icon {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+@media (max-width: 768px) {
+    .header-controls {
+        padding: 0 16px;
+    }
+    
+    .theme-toggle {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .theme-toggle svg {
+        width: 20px;
+        height: 20px;
+    }
 } 

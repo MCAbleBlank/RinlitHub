@@ -18,7 +18,18 @@
     <div id="overlay" class="overlay">
         <div class="text-bg">
             <div class="overlay-body">
-                <h1 class="site-title">RinLit Hub</h1>
+                <div class="header-controls">
+                    <h1 class="site-title">RinLit Hub</h1>
+                    <button class="theme-toggle" id="themeToggle" aria-label="切换深浅色模式">
+                        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"/>
+                            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                        </svg>
+                        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        </svg>
+                    </button>
+                </div>
                 <p class="overlay-title">年龄确认</p>
                 <p class="overlay-description">
                     本页面包含可能不适合未成年人的内容。
@@ -35,6 +46,7 @@
         </div>
     </div>
 
+    <script src="scripts/theme-toggle.js"></script>
     <script src="scripts/tags-loader.js"></script>
     <script src="scripts/main.js"></script>
 </body>
