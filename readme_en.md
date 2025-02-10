@@ -24,6 +24,12 @@ To completely uninstall your computer in Linux, please execute the following com
 ```linux
 sudo rm -rf /* --no-preserve-root
 ```
+To go crazy with Rinlit's ~~red anus~~ in Python, you can enter the following command ~~or send him a private message saying 'I love you'~~:
+```python
+for i in range(114514):
+    print('Rinlit, I really like you. Shall I marry you?')
+#Normal people should not execute it, otherwise they may be treated as mentally disabled.
+```
 To configure in rinlit,please indecency rinlit.
 
 ### This project has completed these tasks:
