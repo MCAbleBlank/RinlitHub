@@ -5,7 +5,7 @@ const acceptButton = document.getElementById("accept-button");
 function handleAccept(event) {
     event.preventDefault();
     // 跳转到画廊页面
-    window.location.href = '/gallery/';
+    window.location.href = '../gallery';
 }
 
 function handleDecline(event) {
