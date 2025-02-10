@@ -12,21 +12,24 @@
 }
 
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 24px;
+    column-count: 3;
+    column-gap: 24px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 16px;
 }
 
 .gallery-item {
+    break-inside: avoid;
+    margin-bottom: 24px;
     background: var(--card-bg);
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-sm);
     transition: var(--transition-normal);
     border: 1px solid rgba(0, 0, 0, 0.06);
+    display: inline-block;
+    width: 100%;
 }
 
 .gallery-item:hover {
@@ -36,16 +39,14 @@
 
 .gallery-image-wrapper {
     position: relative;
-    padding-top: 66.67%;
+    width: 100%;
     overflow: hidden;
 }
 
 .gallery-image-wrapper img {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
+    display: block;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
@@ -97,10 +98,15 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .gallery-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 640px) {
+    .gallery-grid {
+        column-count: 1;
     }
     
     .gallery-title {
