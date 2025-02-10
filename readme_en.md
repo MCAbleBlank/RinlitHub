@@ -13,12 +13,12 @@
 > ~~Of course, Lu Xun never said the above words~~
 
 ## Multilanguage ポリグロット полиглот
-[中文](https://github.com/FireworkRocket/RinlitHub/blob/main/README.md "Chinese Version") | 
-[English](https://github.com/FireworkRocket/RinlitHub/blob/main/readme_en.md "English Version") | 
-[日本語](https://github.com/FireworkRocket/RinlitHub/blob/main/readme_jp.md "Japanese Version") | 
-[Русский (язык)](https://github.com/FireworkRocket/RinlitHub/blob/main/readme_ru.md "Russian Version")
+[中文](https://github.com/MCAbleBlank/RinlitHub/blob/main/README.md "Chinese Version") | 
+[English](https://github.com/MCAbleBlank/RinlitHub/blob/main/readme_en.md "English Version") | 
+[日本語](https://github.com/MCAbleBlank/RinlitHub/blob/main/readme_jp.md "Japanese Version") | 
+[Русский (язык)](https://github.com/MCAbleBlank/RinlitHub/blob/main/readme_ru.md "Russian Version")
 
-![Must be RinLit's doing](https://github.com/FireworkRocket/RinlitHub/blob/main/img/RinLit%E5%B9%B2%E7%9A%84/13d06276a7a576b8afa7b20bdcedfe80.jpg?raw=true)
+![Must be RinLit's doing](https://github.com/MCAbleBlank/RinlitHub/blob/main/img/RinLit%E5%B9%B2%E7%9A%84/13d06276a7a576b8afa7b20bdcedfe80.jpg?raw=true)
 
 ---
 To configure this project in **C**, enter the following command:

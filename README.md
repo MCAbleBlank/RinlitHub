@@ -13,13 +13,13 @@
 >~~当然鲁迅并没有说过以上的话~~
 
 ## 多语言 Multilanguage ポリグロット полиглот
-[中文](https://github.com/FireworkRocket/RinlitHub/blob/main/README.md "中文版") | 
-[English](https://github.com/FireworkRocket/RinlitHub/blob/main/readme_en.md "英语版") | 
-[日本語](https://github.com/FireworkRocket/RinlitHub/blob/main/readme_jp.md "日语版") | 
-[Русский (язык)](https://github.com/FireworkRocket/RinlitHub/blob/main/readme_ru.md "俄语版")
+[中文](https://github.com/MCAbleBlank/RinlitHub/blob/main/README.md "中文版") | 
+[English](https://github.com/MCAbleBlank/RinlitHub/blob/main/readme_en.md "英语版") | 
+[日本語](https://github.com/MCAbleBlank/RinlitHub/blob/main/readme_jp.md "日语版") | 
+[Русский (язык)](https://github.com/MCAbleBlank/RinlitHub/blob/main/readme_ru.md "俄语版")
 
 
-![一定是RinLit干的](https://github.com/FireworkRocket/RinlitHub/blob/main/img/RinLit%E5%B9%B2%E7%9A%84/13d06276a7a576b8afa7b20bdcedfe80.jpg?raw=true)
+![一定是RinLit干的](https://github.com/MCAbleBlank/RinlitHub/blob/main/img/RinLit%E5%B9%B2%E7%9A%84/13d06276a7a576b8afa7b20bdcedfe80.jpg?raw=true)
 
 ---
 要在**C**语言中配置本项目,请输入以下命令:

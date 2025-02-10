@@ -13,12 +13,12 @@
 > ~~もちろん、魯迅は上記の言葉を言っていません~~
 
 ## 多言語対応 Multilanguage полиглот
-[中文](https://github.com/FireworkRocket/RinlitHub/blob/main/README.md "中国語版") | 
-[English](https://github.com/FireworkRocket/RinlitHub/blob/main/readme_en.md "英語版") | 
-[日本語](https://github.com/FireworkRocket/RinlitHub/blob/main/readme_jp.md "日本語版") | 
-[ロシア語](https://github.com/FireworkRocket/RinlitHub/blob/main/readme_ru.md "ロシア語版")
+[中文](https://github.com/MCAbleBlank/RinlitHub/blob/main/README.md "中国語版") | 
+[English](https://github.com/MCAbleBlank/RinlitHub/blob/main/readme_en.md "英語版") | 
+[日本語](https://github.com/MCAbleBlank/RinlitHub/blob/main/readme_jp.md "日本語版") | 
+[ロシア語](https://github.com/MCAbleBlank/RinlitHub/blob/main/readme_ru.md "ロシア語版")
 
-![きっとRinLitの仕業です](https://github.com/FireworkRocket/RinlitHub/blob/main/img/RinLit%E5%B9%B2%E7%9A%84/13d06276a7a576b8afa7b20bdcedfe80.jpg?raw=true)
+![きっとRinLitの仕業です](https://github.com/MCAbleBlank/RinlitHub/blob/main/img/RinLit%E5%B9%B2%E7%9A%84/13d06276a7a576b8afa7b20bdcedfe80.jpg?raw=true)
 
 ---
 **C**言語でこのプロジェクトを設定するには、以下のコマンドを入力してください：
