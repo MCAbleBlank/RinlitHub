@@ -26,56 +26,54 @@ const scaleText = document.getElementById('scaleText');
 galleryLinks.forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
-        viewerImage.src = link.href;
-        imageViewer.classList.add('active');
-        document.body.style.overflow = 'hidden';
-        
-        // 重置位置和缩放
-        translateX = 0;
-        translateY = 0;
-        
-        // 等待图片加载完成后计算初始缩放
-        viewerImage.onload = function() {
-            const containerWidth = window.innerWidth * 0.85;
-            const containerHeight = window.innerHeight * 0.85;
-            const imageRatio = this.naturalWidth / this.naturalHeight;
-            const containerRatio = containerWidth / containerHeight;
-            
-            if (imageRatio > containerRatio) {
-                currentScale = (containerWidth / this.naturalWidth) * 0.9;
-            } else {
-                currentScale = (containerHeight / this.naturalHeight) * 0.9;
-            }
-            
-            updateImageTransform();
-            updateScaleText();
-        };
+        openImageViewer(link.href);
     });
 });
+
+// 打开图片查看器
+function openImageViewer(imageSrc) {
+    viewerImage.src = imageSrc;
+    imageViewer.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    
+    // 重置位置和缩放
+    resetImageTransform();
+}
+
+// 重置图片变换
+function resetImageTransform() {
+    currentScale = 1;
+    translateX = 0;
+    translateY = 0;
+    updateImageTransform();
+}
 
 // 更新图片变换
 function updateImageTransform() {
     viewerImage.style.transform = `translate(${translateX}px, ${translateY}px) scale(${currentScale})`;
+    scaleText.textContent = `${Math.round(currentScale * 100)}%`;
 }
 
-// 鼠标按下事件
+// 开始拖拽
 viewerImage.addEventListener('mousedown', (e) => {
-    isDragging = true;
-    startX = e.clientX - translateX;
-    startY = e.clientY - translateY;
-    viewerImage.classList.add('dragging');
+    if (e.button === 0) { // 只响应左键
+        isDragging = true;
+        startX = e.clientX - translateX;
+        startY = e.clientY - translateY;
+        viewerImage.classList.add('dragging');
+    }
 });
 
-// 鼠标移动事件
+// 拖拽移动
 window.addEventListener('mousemove', (e) => {
-    if (!isDragging) return;
-    
-    translateX = e.clientX - startX;
-    translateY = e.clientY - startY;
-    updateImageTransform();
+    if (isDragging) {
+        translateX = e.clientX - startX;
+        translateY = e.clientY - startY;
+        updateImageTransform();
+    }
 });
 
-// 鼠标释放事件
+// 结束拖拽
 window.addEventListener('mouseup', () => {
     isDragging = false;
     viewerImage.classList.remove('dragging');
@@ -83,35 +81,18 @@ window.addEventListener('mouseup', () => {
 
 // 缩放图片
 function zoomImage(delta) {
-    const oldScale = currentScale;
-    currentScale = Math.min(Math.max(currentScale + delta, minScale), maxScale);
-    
-    // 调整位置以保持缩放中心
-    if (oldScale !== currentScale) {
-        const scaleRatio = currentScale / oldScale;
-        translateX = translateX * scaleRatio;
-        translateY = translateY * scaleRatio;
+    const newScale = currentScale + delta;
+    if (newScale >= minScale && newScale <= maxScale) {
+        currentScale = newScale;
+        updateImageTransform();
     }
-    
-    updateImageTransform();
-    updateScaleText();
 }
 
 // 关闭图片查看器
 function closeImageViewer() {
     imageViewer.classList.remove('active');
     document.body.style.overflow = 'auto';
-    viewerImage.src = '';
-    currentScale = 1;
-    translateX = 0;
-    translateY = 0;
-    updateImageTransform();
-    updateScaleText();
-}
-
-// 更新缩放文本显示
-function updateScaleText() {
-    scaleText.textContent = `${Math.round(currentScale * 100)}%`;
+    resetImageTransform();
 }
 
 // 鼠标滚轮缩放

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/overlay.css">
     <link rel="stylesheet" href="styles/buttons.css">
     <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/tags.css">
 </head>
 
 <body>
@@ -23,6 +24,9 @@
                     本页面包含可能不适合未成年人的内容。
                     <br>请确认您的年龄以继续访问。
                 </p>
+                <div class="tags-preview" id="tagsPreview">
+                    <!-- 标签将由 JavaScript 动态生成 -->
+                </div>
                 <div class="overlay-buttons-wrapper">
                     <div id="accept-button" class="overlay-button">已满18岁🥵</div>
                     <div id="decline-button" class="overlay-button">未满18岁🔞</div>
@@ -31,6 +35,7 @@
         </div>
     </div>
 
+    <script src="scripts/tags-loader.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 
