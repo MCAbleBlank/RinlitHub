@@ -7,8 +7,8 @@ const galleryLinks = document.querySelectorAll('.gallery-link');
 // 缩放相关变量
 let currentScale = 1;
 const minScale = 0.5;
-const maxScale = 3;
-const scaleStep = 0.1;
+const maxScale = 5;
+const scaleStep = 0.2;
 
 // 拖拽相关变量
 let isDragging = false;
