@@ -19,7 +19,7 @@
 [Русский (язык)](https://github.com/MCAbleBlank/RinlitHub/blob/main/readme_ru.md "俄语版")
 
 
-![一定是RinLit干的](https://github.com/MCAbleBlank/RinlitHub/blob/main/img/RinLit%E5%B9%B2%E7%9A%84/13d06276a7a576b8afa7b20bdcedfe80.jpg?raw=true)
+![一定是RinLit干的](https://github.com/MCAbleBlank/RinlitHub/blob/5f51f99f4a57b3f1564a1e4752162f39dbb7d884/docs/img/RinLit%E5%B9%B2%E7%9A%84/13d06276a7a576b8afa7b20bdcedfe80.jpg?raw=true)
 
 ---
 要在**C**语言中配置本项目,请输入以下命令:
