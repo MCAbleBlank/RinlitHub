@@ -5,8 +5,8 @@
             "color": "rgb(54, 162, 235)"
         },
         "qq": {
-            "name": "梗图",
-            "color": "rgb(255, 99, 132)"
+            "name": "QQ",
+            "color": "rgb(255, 216, 96)"
         },
         "dc": {
             "name": "Discord",
@@ -19,10 +19,6 @@
         "love": {
             "name": "❤",
             "color": "rgb(255, 99, 132)"
-        },
-        "rinlit": {
-            "name": "RinLit出没",
-            "color": "rgb(153, 102, 255)"
         }
     },
     "images": [
@@ -35,38 +31,101 @@
         },
         {
             "src": "../img/纯逆天/是南凉.png",
-            "title": "是南梁😋",
+            "title": "南梁😋",
             "description": "",
             "alt": "图片2",
-            "tags": ["meme"]
+            "tags": ["qq"]
         },
         {
             "src": "../img/喵/喵!.png",
             "title": "喵！",
             "description": "",
             "alt": "图片3",
-            "tags": ["rinlit"]
+            "tags": ["qq"]
         },
         {
             "src": "../img/喵/喵.png",
             "title": "是嵌套喵",
             "description": "",
             "alt": "图片4",
-            "tags": ["rinlit", "meme"]
+            "tags": ["qq"]
         },
         {
             "src": "../img/RinLit干的/13d06276a7a576b8afa7b20bdcedfe80.jpg",
             "title": "一定是RinLit干的🤔",
             "description": "",
             "alt": "图片5",
-            "tags": ["rinlit", "meme"]
+            "tags": ["meme"]
         },
         {
             "src": "../img/RinLit干的/d667ac052c0c360981b52c328642e88b.jpg",
             "title": "RinLit也干了🥵",
             "description": "",
             "alt": "图片6",
-            "tags": ["rinlit"]
+            "tags": ["qq"]
+        },
+        {
+            "src": "../img/QQ&钉钉/Screenshot_2025-02-03-18-56-32-84_9.jpg",
+            "title": "强◯小萝莉Rinlit🥰",
+            "description": "",
+            "alt": "图片7",
+            "tags": ["qq"]
+        },
+        {
+            "src": "../img/QQ&钉钉/Screenshot_2025-02-03-16-11-30-080_.jpg",
+            "title": "只有我们两个呢",
+            "description": "",
+            "alt": "图片8",
+            "tags": ["qq","love"]
+        },
+        {
+            "src": "../img/QQ&钉钉/Screenshot_2025-01-30-20-43-04-279_.jpg",
+            "title": "🐍给我",
+            "description": "",
+            "alt": "图片9",
+            "tags": ["qq","love"]
+        },
+        {
+            "src": "../img/QQ&钉钉/Screenshot_2025-01-30-19-12-15-627_.jpg",
+            "title": "塞不下了🥵",
+            "description": "",
+            "alt": "图片10",
+            "tags": ["qq","love"]
+        },
+        {
+            "src": "../img/QQ&钉钉/Screenshot_2025-01-30-19-00-12-039_.jpg",
+            "title": "春节福利🥰",
+            "description": "",
+            "alt": "图片11",
+            "tags": ["qq","fadian"]
+        },
+        {
+            "src": "../img/QQ&钉钉/Screenshot_2025-01-30-17-13-22-09_9.jpg",
+            "title": "主播你是1吗",
+            "description": "",
+            "alt": "图片12",
+            "tags": ["qq","meme"]
+        },
+        {
+            "src": "../img/QQ&钉钉/Screenshot_2025-01-30-17-08-53-946_.jpg",
+            "title": "一定要有的东西",
+            "description": "",
+            "alt": "图片13",
+            "tags": ["qq","love","fadian"]
+        },
+        {
+            "src": "../img/QQ&钉钉/Screenshot_2025-01-29-17-56-48-043_.jpg",
+            "title": "晚上怎么了？",
+            "description": "",
+            "alt": "图片14",
+            "tags": ["qq","meme"]
+        },
+        {
+            "src": "../img/QQ&钉钉/Screenshot_2025-01-29-17-56-48-043_.jpg",
+            "title": "晚上怎么了？",
+            "description": "",
+            "alt": "图片15",
+            "tags": ["qq","meme"]
         }
     ]
 } 

@@ -6,14 +6,16 @@
 
 .gallery-title {
     text-align: center;
-    font-size: 36px;
+    font-size: 48px;
     margin-bottom: 40px;
-    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    background: linear-gradient(45deg, #4ecdc4, #38a9c2);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     font-weight: 700;
     text-shadow: 0 0 20px rgba(37, 217, 230, 0.3);
+    filter: drop-shadow(0 0 10px rgba(78, 205, 196, 0.3))
+           drop-shadow(0 0 20px rgba(56, 169, 194, 0.2));
 }
 
 .gallery-grid {
@@ -116,7 +118,7 @@
     }
     
     .gallery-title {
-        font-size: 28px;
+        font-size: 36px;
         margin-bottom: 30px;
     }
 }
