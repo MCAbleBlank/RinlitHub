@@ -2,14 +2,26 @@
     "tags": {
         "meme": {
             "name": "梗图",
+            "color": "rgb(54, 162, 235)"
+        },
+        "qq": {
+            "name": "梗图",
             "color": "rgb(255, 99, 132)"
         },
-        "cat": {
-            "name": "喵喵",
+        "dc": {
+            "name": "Discord",
+            "color": "rgb(38, 98, 246)"
+        },
+        "fadian": {
+            "name": "补💊在这💈",
             "color": "rgb(75, 192, 192)"
         },
+        "love": {
+            "name": "❤",
+            "color": "rgb(255, 99, 132)"
+        },
         "rinlit": {
-            "name": "RinLit",
+            "name": "RinLit出没",
             "color": "rgb(153, 102, 255)"
         }
     },
@@ -17,42 +29,42 @@
         {
             "src": "../img/纯逆天/610b8667ef324098e5c028276af7151d.jpg",
             "title": "卖掉了 Sold Out!",
-            "description": "这是第一张图片的描述文字。",
+            "description": "",
             "alt": "图片1",
             "tags": ["meme"]
         },
         {
             "src": "../img/纯逆天/是南凉.png",
             "title": "是南梁😋",
-            "description": "这是第二张图片的描述文字。",
+            "description": "",
             "alt": "图片2",
             "tags": ["meme"]
         },
         {
             "src": "../img/喵/喵!.png",
             "title": "喵！",
-            "description": "这是第三张图片的描述文字。",
+            "description": "",
             "alt": "图片3",
             "tags": ["cat"]
         },
         {
             "src": "../img/喵/喵.png",
             "title": "是嵌套喵",
-            "description": "这是第四张图片的描述文字。",
+            "description": "",
             "alt": "图片4",
             "tags": ["cat", "meme"]
         },
         {
             "src": "../img/RinLit干的/13d06276a7a576b8afa7b20bdcedfe80.jpg",
             "title": "一定是RinLit干的🤔",
-            "description": "这是第五张图片的描述文字。",
+            "description": "",
             "alt": "图片5",
             "tags": ["rinlit", "meme"]
         },
         {
             "src": "../img/RinLit干的/d667ac052c0c360981b52c328642e88b.jpg",
             "title": "RinLit也干了🥵",
-            "description": "这是第六张图片的描述文字。",
+            "description": "",
             "alt": "图片6",
             "tags": ["rinlit"]
         }

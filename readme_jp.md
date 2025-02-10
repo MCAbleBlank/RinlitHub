@@ -18,7 +18,7 @@
 [日本語](https://github.com/MCAbleBlank/RinlitHub/blob/main/readme_jp.md "日本語版") | 
 [ロシア語](https://github.com/MCAbleBlank/RinlitHub/blob/main/readme_ru.md "ロシア語版")
 
-![きっとRinLitの仕業です](https://github.com/MCAbleBlank/RinlitHub/blob/main/img/RinLit%E5%B9%B2%E7%9A%84/13d06276a7a576b8afa7b20bdcedfe80.jpg?raw=true)
+![きっとRinLitの仕業です](https://github.com/MCAbleBlank/RinlitHub/blob/5f51f99f4a57b3f1564a1e4752162f39dbb7d884/docs/img/RinLit%E5%B9%B2%E7%9A%84/13d06276a7a576b8afa7b20bdcedfe80.jpg?raw=true)
 
 ---
 **C**言語でこのプロジェクトを設定するには、以下のコマンドを入力してください：
