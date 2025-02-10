@@ -3,7 +3,6 @@ const imageViewer = document.getElementById('imageViewer');
 const viewerImage = document.getElementById('viewerImage');
 const closeViewer = document.getElementById('closeViewer');
 const galleryLinks = document.querySelectorAll('.gallery-link');
-const downloadBtn = document.getElementById('downloadBtn');
 
 // 缩放相关变量
 let currentScale = 1;
@@ -80,12 +79,6 @@ window.addEventListener('mousemove', (e) => {
 window.addEventListener('mouseup', () => {
     isDragging = false;
     viewerImage.classList.remove('dragging');
-});
-
-// 下载按钮点击事件
-downloadBtn.addEventListener('click', () => {
-    // 在新窗口打开图片链接
-    window.open(viewerImage.src, '_blank');
 });
 
 // 缩放图片

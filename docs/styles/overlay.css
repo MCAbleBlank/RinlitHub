@@ -52,18 +52,22 @@
     background-color: var(--bg-color);
     padding: 40px;
     border-radius: 24px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow-md);
     max-width: 480px;
     width: 100%;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    transition: var(--transition-normal);
 }
 
 .text-bg:hover {
-    box-shadow: 0 0 20px rgba(37, 217, 230, 0.2);
-    border-color: rgba(37, 217, 230, 0.3);
+    box-shadow: var(--shadow-lg);
+}
+
+@media (prefers-color-scheme: dark) {
+    .text-bg {
+        background-color: var(--card-bg);
+        border-color: rgba(255, 255, 255, 0.08);
+    }
 }
 
 .scare {
